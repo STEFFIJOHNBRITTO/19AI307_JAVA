@@ -1,83 +1,74 @@
 # Ex.No:5(B) TIGHTLY ENCAPSULATED CLASS
 
 ## AIM:
-To Create a java program to print the sum of two number using getter and setter method.
+To Create a java program to display the value of area of triangle get the radius and height value as input and use tightly encapsulated class.
 
 ## ALGORITHM :
-1.  Start the Program
-2.	Define class `Employee`:
--	a) Private variables `n1` and `n2`
--	b) Method `setsum(int n1, int n2)` to set values of `n1` and `n2`
--	c) Method `getsum()` to calculate and print `sum = n1 + n2`
-3.	In `main` class `main` method:
--	a) Use `Scanner` to read integers `n1` and `n2`
--	b) Create ` Employee ` object, set values, and call `getsum()`
+1.	Start the program.
+2.	Define `Triangle` class:
+-	a) Private variables `width` and `height`
+-	b) `setWidth(int w)` and `setHeight(int h)` methods to set values
+-	c) `getVolume()` method:
+- i) Calculate and print area
+3.	In `Main` class `main` method:
+-	a) Use `Scanner` to read `radius` and `height`
+-	b) Create `Triangle` object, set values, and call `getArea()`
 4.	End
-
 
 ## PROGRAM:
  ```
 
-Program to implement a class & objects using Java
-Developed by: STEFFI J
-RegisterNumber:  212224220107
-
+Program to implement a tightly encapsulated class using Java
+Developed by: CLARISSA K
+RegisterNumber: 212224230047
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
+public class SetAndGet {
+ 
+ private int w;
+ private int h;
 
-```java
-import java.util.Scanner;
 
-class Employee
-{
-    private int n1;
-    private int n2;
+public int getWidth() {
+ return w;
+}
 
-    public void setsum(int n1, int n2)
-    {
-        this.n1 = n1;
-        this.n2 = n2;
-    }
+public void setWidth(int w) {
+ this.w = w;
+}
 
-    public void getsum()
-    {
-        int sum = n1 + n2;
+public int getHeight() {
+ return h;
+}
 
-        System.out.println("Sum = " + sum);
-    }
+public void setHeight(int h) {
+ this.h = h;
+}
 
-    public static void main(String args[])
-    {
-        Scanner sc = new Scanner(System.in);
 
-        int n1 = sc.nextInt();
-        int n2 = sc.nextInt();
+public static void main(String args[]){
+ Scanner sc=new Scanner(System.in);
+ SetAndGet obj = new SetAndGet();
+ int s1=sc.nextInt();
+ int s2=sc.nextInt();
+ 
+ obj.setWidth(s1);
+ obj.setHeight(s2);
+ System.out.println(obj.getWidth() * obj.getHeight());
 
-        Employee emp = new Employee();
+}
 
-        emp.setsum(n1, n2);
-        emp.getsum();
 
-        sc.close();
-    }
 }
 ```
 
-
-
-
-
 ## OUTPUT:
 
-<img width="696" height="191" alt="image" src="https://github.com/user-attachments/assets/ec8e4119-9da6-4802-b51d-567214715fb7" />
-
+![image](https://github.com/user-attachments/assets/97aed7f4-ff6f-4723-a100-ee4c84c03230)
 
 ## RESULT:
-Thus the java program to print the sum of two number using getter and setter method was executed successfully.
-
-
-
-
-
+Thus a java program to display the value of area of triangle get the width and height value as input and use tightly encapsulated class was executed successfully.
 
