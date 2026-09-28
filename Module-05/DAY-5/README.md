@@ -20,75 +20,62 @@ b.	Create an object of ArrayOperation and call findMax() by passing the ArrayDat
 ## PROGRAM:
  ```
 
-Program to implement a class & objects using Java
-
-
+Program to implement a HAS-A RelationShip
+Developed by: CLARISSA K
+RegisterNumber: 212224230047
 ```
 
 ## Sourcecode.java:
-```java
+```
 import java.util.Scanner;
+class fun{
+    public int largest(int[] array) {
+    
+    
+    int max = array[0];
 
-class ArrayData
-{
-    int arr[];
-    int size;
-
-    void readArray()
-    {
-        Scanner sc = new Scanner(System.in);
-
-        size = sc.nextInt();
-
-        arr = new int[size];
-
-        for (int i = 0; i < size; i++)
-        {
-            arr[i] = sc.nextInt();
-        }
+   
+    for (int i = 1; i < array.length; i++) {
+      if (max < array[i])
+        max = array[i];
     }
 
-    public static void main(String args[])
-    {
-        ArrayData data = new ArrayData();
-
-        data.readArray();
-
-        ArrayOperation operation = new ArrayOperation();
-
-        operation.findMax(data);
-    }
+    return max;
+  }
 }
+public class ArrayProgram {
 
-class ArrayOperation
-{
-    void findMax(ArrayData data)
-    {
-        int max = data.arr[0];
+  public static void main(String[] args) {
+   
+    Scanner scan = new Scanner(System.in);
 
-        for (int i = 1; i < data.size; i++)
-        {
-            if (data.arr[i] > max)
-            {
-                max = data.arr[i];
-            }
-        }
+    
+    int size = 0;
+    int arr[] = null;
 
-        System.out.println("Largest number is: " + max);
+   
+    size = scan.nextInt();
+
+   
+    arr = new int[size];
+
+  
+  
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = scan.nextInt();
     }
+    fun obj=new fun();
+   
+    System.out.println("Largest element = " + obj.largest(arr));
+
+  }
 }
 ```
 
-
-
-
-
-
 ## OUTPUT:
-<img width="766" height="265" alt="image" src="https://github.com/user-attachments/assets/460d5302-fbbe-4cd6-9b78-09b457aaf789" />
 
+![image](https://github.com/user-attachments/assets/7c18ff67-c7e8-4e8f-8ea6-36738cac64e9)
 
 
 ## RESULT:
 Thus the java program to Find the Largest or Max Number in Array using has - a relationship was executed successfully. 
-
