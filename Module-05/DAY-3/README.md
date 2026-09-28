@@ -17,64 +17,48 @@ To Create a java program to print the sum of two number using getter and setter 
 
 ## PROGRAM:
  ```
-
-Program to implement a class & objects using Java
-
+Program to implement a Getter and Setter using Java
+Developed by: CLARISSA K
+RegisterNumber: 212224230047
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
+public class SetAndGet {
+private String a;
+private String b;
 
-```java
-import java.util.Scanner;
+public void getadd() {
+    int a1=Integer.parseInt(a);
+    int b1=Integer.parseInt(b);
+	System.out.print("Sum is " + (a1+b1)); 
+	
+}
+public void setadd(String a,String b) {
+ this.a =a;
+ this.b=b;
+}
 
-class Employee
-{
-    private int n1;
-    private int n2;
-
-    public void setsum(int n1, int n2)
-    {
-        this.n1 = n1;
-        this.n2 = n2;
-    }
-
-    public void getsum()
-    {
-        int sum = n1 + n2;
-
-        System.out.println("Sum = " + sum);
-    }
-
-    public static void main(String args[])
-    {
-        Scanner sc = new Scanner(System.in);
-
-        int n1 = sc.nextInt();
-        int n2 = sc.nextInt();
-
-        Employee emp = new Employee();
-
-        emp.setsum(n1, n2);
-        emp.getsum();
-
-        sc.close();
-    }
+public static void main(String args[]){
+ Scanner sc=new Scanner(System.in);
+ SetAndGet obj = new SetAndGet();
+ String str=sc.nextLine();
+ String str1=sc.nextLine();
+ 
+ obj.setadd(str,str1);
+ 
+ obj.getadd();
+}
 }
 ```
 
-
-
-
-
 ## OUTPUT:
 
-<img width="696" height="191" alt="image" src="https://github.com/user-attachments/assets/ec8e4119-9da6-4802-b51d-567214715fb7" />
-
+![image](https://github.com/user-attachments/assets/ad891b8f-63c2-4dac-afaa-a6d8e5c46519)
 
 ## RESULT:
 Thus the java program to print the sum of two number using getter and setter method was executed successfully.
-
-
 
 
 
