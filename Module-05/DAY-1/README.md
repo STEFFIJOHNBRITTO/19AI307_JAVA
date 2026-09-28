@@ -1,6 +1,6 @@
 # Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To Create a java program to display name and location of the employee and use the encapsulation concepts
+To Create a java program to display name and location of the vehicle and use the encapsulation concepts
 
 ## ALGORITHM :
 1.  Start the program
@@ -18,75 +18,49 @@ To Create a java program to display name and location of the employee and use th
 -	e) Print the values of `hl.get1()` and `hl.get2()`
 4.	End
 
-
-
-
-
 ## PROGRAM:
  ```
-
-Program to implement a class & objects using Java
-
+Program to implement a Data Hiding & Encapsulation using Java
+Developed by: CLARISSA K
+RegisterNumber: 212224230047
 ```
 
 ## Sourcecode.java:
-```java
-import java.util.Scanner;
+```
+import java.util.*;
+class vehicle {
+ private String vName;
+ private String vlocation;
+ public String getvName() {
+  return vName;
+ }
+ public void setvName(String vName) {
+  this.vName = vName;
+ }
+ public String getLocation() {
+  return vlocation;
+ }
+ public void setLocation(String vlocation) {
+  this.vlocation = vlocation;
+ }
+}
 
-class Employee
-{
-    private String name1;
-    private String name2;
-
-    public void setname(String n1)
-    {
-        name1 = n1;
-    }
-
-    public void setname2(String n2)
-    {
-        name2 = n2;
-    }
-
-    public String get1()
-    {
-        return name1;
-    }
-
-    public String get2()
-    {
-        return name2;
-    }
-
-    public static void main(String args[])
-    {
-        Scanner sc = new Scanner(System.in);
-
-        String name1 = sc.nextLine();
-        String name2 = sc.nextLine();
-
-        Employee hl = new Employee();
-
-        hl.setname(name1);
-        hl.setname2(name2);
-
-        System.out.println("Employee Name: " + hl.get1());
-        System.out.println("Employee Location: " + hl.get2());
-
-        sc.close();
-    }
+public class EmployeMain {
+ public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+  vehicle employee = new vehicle();
+  employee.setvName(sc.nextLine());
+  employee.setLocation(sc.nextLine());
+  System.out.println(employee.getvName());
+  System.out.println(employee.getLocation());
+ }
 }
 ```
 
-
-
-
-
-
 ## OUTPUT:
-<img width="775" height="266" alt="image" src="https://github.com/user-attachments/assets/72bbd10a-7b50-47ec-b33e-8e78a69150bf" />
 
+![image](https://github.com/user-attachments/assets/96f1a565-1508-431c-8bb2-0e108ce13dd3)
 
 
 ## RESULT:
-Thus , the  java program to display name and location of the employee and use the encapsulation concepts executed successfully.
+Thus , the  java program to display name and location of the vehicle and use the encapsulation concepts executed successfully.
